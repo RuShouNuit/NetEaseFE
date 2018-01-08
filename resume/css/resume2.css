@@ -7,21 +7,26 @@ table{border-collapse:collapse;border-spacing:0;}
 caption,th{text-align:left;}
 li{list-style: none;}
 a,a:hover{text-decoration:none;cursor:pointer;color:#fff;}
-/* body */
-#container{width:768px;margin:0 auto;font:normal 14px/1.5 arial,"宋体",sans-serif;}
-.g-sd,.g-mn{float:left;height:600px;padding:20px 15px;}
+/* function */
+/* .f-cb:after{display:block;height:0;visibility:hidden;overflow:hidden;content:" ";}
+.f-fl{float:left;}
+.f-fr{float:right;} */
+/* content */
+#container{width:768px;height:750px;margin:0 auto;font:normal 14px/1.5 arial,"宋体",sans-serif;}
+.g-sd,.g-mn{float:left;height:100%;padding:20px 15px;}
 .m-wrap{width:100%;margin-top:20px;}
 .m-wrap h3{height:30px;line-height:30px;margin-bottom:5px;border-bottom:2px solid #fff;font-size:16px;font-weight:bold;text-align:left;}
 /* 左侧 */
 .g-sd{width:210px;color:#fff;background-color:#369;}
 .m-hd{text-align:center;}
 .m-hd img{border-radius:50%;}
-.m-hd .name{font-size:16px;}
+.m-hd .name{font-size:20px;}
 .m-wrap-left .hobbies li{float:left;width:30%;text-align:center;}
 /* 右侧 */
 .g-mn{width:498px;color:#369;background-color:#eee;}
 .m-wrap-right h3{border-bottom-color:#369;}
 .m-wrap-right a,.m-wrap-right a:hover{color:#000;}
-.m-wrap-right .cnt dt{margin-bottom:3px;font-weight:bold;}
+.m-wrap-right .cnt dt{height:25px;line-height:25px;font-weight:bold;}
 .m-wrap-right .cnt dd{font-size:13px;}
-.m-wrap-right .cnt li{margin-top:3px;}
+.m-wrap-right .cnt th{width:80px;vertical-align:top;}
+.m-wrap-right .intro li{margin-top:5px;}

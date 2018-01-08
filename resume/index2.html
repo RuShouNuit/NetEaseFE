@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="cv-preview">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="ROBOTS" CONTENT="noindex,nofollow">
+    <title>TE - 五百丁</title>
+<link href="http://static.500d.me/resources/plugin/cropper/cropper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://static.500d.me/resources/500d/css/layer.css" />
+<link rel="stylesheet" href="http://static.500d.me/resources/500d/editresume/css/base.css?v=7009" />
+<link rel="stylesheet" href="http://static.500d.me/resources/500d/cvresume/css/common.css?v=7009" />
+<script src="http://static.500d.me/resources/500d/js/jquery.min.js"></script>
+<script src="http://static.500d.me/resources/500d/editresume/jquery-ui.min.js"></script>
+<script src="http://static.500d.me/resources/500d/editresume/cropper.min.js"></script>
+<script src="http://static.500d.me/resources/500d/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://static.500d.me/resources/500d/js/common_ext.js?v=7009"></script>
+<script src="http://static.500d.me/resources/500d/js/layer.js"></script>
+<script src="http://static.500d.me/resources/500d/cvresume/js/jquery.s2t.js"></script>
+<script type="text/javascript" src="http://static.500d.me/resources/500d/js/utils.js?v=7009"></script>
+<script type="text/javascript" src="http://static.500d.me/resources/500d/cvresume/js/resume.js?v=7009"></script>
+<link rel="stylesheet" href="css/jm0211.css?v=7009" />
+    <script src="http://static.500d.me/resources/500d/js/utils.js?v=6022" type="text/javascript"></script>
+</head>
+<body class="cv-preview">
+<!--简历编辑区域-->
+<div class='wbdCv-container resume'>
+	<div class="wbdCv-baseStyle" id="resume_base" data_color="j11" data_font_name="yahei" data_font_size="14" data_line_height="1" data_font_type="0" resume_sort='{"left":["base_info","base_home","base_social"],"top":["resume_head","resume_name"],"right":["resume_job_preference","resume_edu","resume_work","resume_internship","resume_skill","resume_hobby","resume_volunteer","resume_project","resume_honor","resume_summary","resume_portfolio","resume_recoment","resume_qrcode"],"bottom":[]}' wap_resume_sort='' template_set='{"left":[{"key":"base_info","isShow":true},{"key":"base_home","isShow":true},{"key":"base_social","isShow":true}],"top":[{"key":"resume_head","isShow":true},{"key":"resume_name","isShow":true}],"right":[{"key":"resume_job_preference","isShow":true},{"key":"resume_edu","isShow":true},{"key":"resume_work","isShow":true},{"key":"resume_internship","isShow":false},{"key":"resume_skill","isShow":true},{"key":"resume_hobby","isShow":true},{"key":"resume_volunteer","isShow":false},{"key":"resume_project","isShow":false},{"key":"resume_honor","isShow":false},{"key":"resume_summary","isShow":true},{"key":"resume_portfolio","isShow":false},{"key":"resume_recoment","isShow":false},{"key":"resume_qrcode","isShow":false}],"bottom":[]}' data_itemid="440" data-modal_margin="1">
+		<div class="wbdCv-resume clearfix">
+			<div class="wbdCv-baseTop"></div>
+			<div class="wbdCv-baseLeft" id="foo">
+				<!--头像模块-->
+				<div class="headItem moduleItem resume_sort " id="resume_head">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="resume_head">&#xe880;</a>
+							<span><div class="item-title module_item_title" contenteditable="false" data-placeholder="头像" data-textLang="head">头像</div></span>
+						</dt>
+						<dd class="clearfix">	
+							<div class="head-con">
+								<div class="img-preview"><img src="http://wubaiding.bj.bcebos.com/upload/image/201801/07/19bd38fe-4f82-4b4a-a80c-18d97d8b680e.png"/></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--基本信息模块-->
+				<div class="infoItem bInfoItem moduleItem resume_sort" id="base_info">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="base_info">&#xe855;</a>
+							<span><div class="resume_lang module_item_title" for-key="info_title" contenteditable="false" data-placeholder="基本信息" data-placeLang="baseMsg" data-textLang="baseMsg">基本信息</div></span>
+						</dt>
+						<dd class="clearfix">		
+							<div class="info-con">
+							<!-- 渲染时 从工作年限开始没有内容的 div 添加 hidden 类  身高 & 体重 要加小写单位 -->
+								<div class="info-sex info-list moduleItemList hidden" id="sex"><a class="wbdfont divIconFont" for-key="sex"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑"></span></div>
+								<div class="info-age info-list moduleItemList "   id="birth"><a class="wbdfont divIconFont" for-key="birth"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-placeLang="age" data-value="1991.10" data-placeholder="生日">27岁</span></div>
+								<div class="info-nation info-list moduleItemList " id="nation"><a class="wbdfont divIconFont" for-key="nation"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑">汉族</span></div>
+								<div class="info-highedu info-list moduleItemList hidden" id="education"><a class="wbdfont divIconFont" for-key="education"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value=""></span></div>
+								<div class="info-marital info-list moduleItemList hidden" id="marriageStatus"><a class="wbdfont divIconFont" for-key="marriageStatus"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value=""></span></div>
+								<div class="info-height info-list moduleItemList hidden" id="height"><a class="wbdfont divIconFont" for-key="height"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value="">cm</span></div>
+								<div class="info-status info-list moduleItemList hidden" id="politicalStatus"><a class="wbdfont divIconFont" for-key="politicalStatus"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value=""></span></div>
+								<div class="info-city info-list moduleItemList "  id="city"><a class="wbdfont divIconFont" for-key="city"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-placeLang="city" data-value="899" data-placeholder="所在城市">江苏扬州</span></div>
+								<div class="info-work info-list moduleItemList hidden" id="jobYear"><a class="wbdfont divIconFont" for-key="jobYear"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value=""></span></div>
+								<div class="info-phone info-list moduleItemList " id="mobile"><a class="wbdfont divIconFont" for-key="mobile"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-placeLang="phone" data-placeholder="联系电话">17696850326</span></div>
+								<div class="info-email info-list moduleItemList " id="email"><a class="wbdfont divIconFont" for-key="email"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-placeLang="email" data-placeholder="电子邮箱">limh_2010@163.com</span></div>
+								<div class="info-weight info-list moduleItemList hidden" id="weight"><a class="wbdfont divIconFont" for-key="weight"></a><span class="500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（其他）-点击模块编辑" data-value="">kg</span></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--个人主页模块-->
+				<div class="homeItem bInfoItem moduleItem resume_sort hidden" id="base_home">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="base_home">&#xf192;</a>
+							<span><div class="resume_lang module_item_title" for-key="base_home" contenteditable="false" data-placeholder="个人主页" data-placeLang="homePage" data-textLang="homePage">个人主页</div></span>
+						</dt>
+						<dd class="clearfix">	
+							<div class="home-con">
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--社交账号模块-->
+				<div class="socialItem bInfoItem moduleItem resume_sort hidden" id="base_social">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="base_social">&#xe64b;</a>
+							<span><div class="resume_lang module_item_title" for-key="base_social" contenteditable="false" data-placeholder="社交账号" data-placeLang="social" data-textLang="social">社交账号</div></span>
+						</dt>
+						<dd class="clearfix">		
+							<div class="social-con">
+								<div class="social-wx social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="微信"></a><span>微信</span></div>
+								<div class="social-qq social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="QQ"></a><span>QQ</span></div>
+								<div class="social-zh social-list moduleItemList hidden"><a class="hvr-buzz" href="#" title="知乎"></a><span>知乎</span></div>
+								<div class="social-wb social-list moduleItemList hidden"><a class="hvr-buzz" href="#" title="微博"></a><span>微博</span></div>
+								<div class="social-dd social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="钉钉号"></a><span>钉钉号</span></div>
+							</div>										
+						</dd>
+					</dl>
+				</div>														
+				<!--技能特长模块-->
+				<div class="skillItem baseItem moduleItem resume_sort hidden" id="resume_skill">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_skill"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_skill" contenteditable="false" data-placeholder="技能特长" data-placeLang="social" data-textLang="social">技能特长</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="skill-con">
+								<div class="baseItem-null" style="display: block;"><div class="baseItem-nullcon 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-技能特长-添加我的技能特长"><i>+</i><span data-textLang="addSkills">添加我的技能特长</span></div></div>
+							</div>
+						</dd>
+					</dl>
+				</div>						
+				<!--兴趣爱好模块-->
+				<div class="hobbyItem baseItem moduleItem resume_sort "  id="resume_hobby">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_hobby"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_hobby" contenteditable="false" data-placeholder="兴趣爱好" data-placeLang="hobby" data-textLang="hobby">兴趣爱好</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="hobby-con">
+								<div class="baseItem-null" style="display:none;"><div class="baseItem-nullcon 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-兴趣爱好-添加我的兴趣爱好"><i>+</i><span data-textLang="addHobby">添加我的兴趣爱好</span></div></div>
+								<div class="hobby-list moduleItemList" data-id="1780646" id="66fc206a12a0e335983ecc247eb28cdc">
+                                    <a class="wbdfont divIconFont" for-key="66fc206a12a0e335983ecc247eb28cdc"></a>
+                                    <span class="hobby-title item_title">   阅读   </span>
+                                </div>
+								<div class="hobby-list moduleItemList" data-id="1780647" id="46d9a66bea2b6a98e1154ba0af9363e1">
+                                    <a class="wbdfont divIconFont" for-key="46d9a66bea2b6a98e1154ba0af9363e1"></a>
+                                    <span class="hobby-title item_title">   编程   </span>
+                                </div>
+								<div class="hobby-list moduleItemList" data-id="1780648" id="085b258c7d95fee85fb88dd3c4b7e49e">
+                                    <a class="wbdfont divIconFont" for-key="085b258c7d95fee85fb88dd3c4b7e49e"></a>
+                                    <span class="hobby-title item_title">   健身   </span>
+                                </div>
+								<div class="hobby-list moduleItemList" data-id="1780649" id="1687967728d6f4a4fef13e2621177c37">
+                                    <a class="wbdfont divIconFont" for-key="1687967728d6f4a4fef13e2621177c37"></a>
+                                    <span class="hobby-title item_title">   音乐   </span>
+                                </div>
+								<div class="hobby-list moduleItemList" data-id="1780650" id="0b842de1ca1e9ce28f6f2b7f97757b80">
+                                    <a class="wbdfont divIconFont" for-key="0b842de1ca1e9ce28f6f2b7f97757b80"></a>
+                                    <span class="hobby-title item_title">   手工   </span>
+                                </div>
+								<div class="hobby-list moduleItemList" data-id="1780651" id="968997f2e47714200b51e21de5fa53da">
+                                    <a class="wbdfont divIconFont" for-key="968997f2e47714200b51e21de5fa53da"></a>
+                                    <span class="hobby-title item_title"> 烹饪 </span>
+                                </div>
+							</div>									
+						</dd>
+					</dl>
+				</div>
+				<!--添加自定义模块-->
+				<div class="baseItem-null addCustomItem"><div class="baseItem-nullcon 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-自定义模块-添加自定义模块"><i>+</i><span data-textLang="custom">添加自定义模块</span></div></div>
+			</div>
+			<div class="wbdCv-baseRight" id="bar">
+				<!--姓名一句话模块-->
+				<div class="nameItem bInfoItem moduleItem resume_sort" id="resume_name">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="resume_name">&#xe8af;</a>
+							<span><div class="item-title module_item_title" contenteditable="false" data-placeholder="姓名">姓名</div></span>
+						</dt>
+						<dd class="clearfix">	
+							<div class="name-con">
+								<div class="name resume_lang 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（名字）-点击模块编辑" for-key="name" contenteditable="false" data-placeholder="你的名字" data-placeLang="name">李旻慧</div>
+								<div class="500dtongji resume_tag " data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（名字）-点击模块编辑"><span>乐观</span><span>抗压力强</span><span>成长型</span></div>
+								<div class="word resume_lang 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-基本信息（名字）-点击模块编辑" for-key="word" contenteditable="false" data-placeholder="一句话介绍自己，告诉HR为什么选择你而不是别人" data-placeLang="word">成长型和驱动型人才</div>
+							</div>
+						</dd>
+					</dl>
+				</div>													
+				<!--求职意向模块-->
+				<div class="inteItem baseItem moduleItem resume_sort "  id="resume_job_preference">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_job_preference"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_job_preference" contenteditable="false" data-placeholder="求职意向" data-placeLang="job" data-textLang="job">求职意向</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="inte-con">
+								<div data_track="PC-在线制作-文档编辑页-中间简历编辑-求职意向-点击模块编辑" class="500dtongji inte-job inte-list moduleItemList " id="jobFunction"><a class="wbdfont divIconFont" for-key="jobFunction"></a><span data-placeholder="意向岗位" data-placeLang="jobFun">测试工程师</span></div>
+								<div data_track="PC-在线制作-文档编辑页-中间简历编辑-求职意向-点击模块编辑" class="500dtongji inte-type inte-list moduleItemList hidden" id="jobType"><a class="wbdfont divIconFont" for-key="jobType"></a><span data-value="" data-placeholder="职业类型" data-placeLang="jobType"></span></div>
+								<div data_track="PC-在线制作-文档编辑页-中间简历编辑-求职意向-点击模块编辑" class="500dtongji inte-city inte-list moduleItemList hidden" id="jobCity"><a class="wbdfont divIconFont" for-key="jobCity"></a><span data-placeholder="意向城市" data-value="" data-placeLang="jobCity"></span></div>
+								<div data_track="PC-在线制作-文档编辑页-中间简历编辑-求职意向-点击模块编辑" class="500dtongji inte-price inte-list moduleItemList " id="jobSalary"><a class="wbdfont divIconFont" for-key="jobSalary"></a><span data-placeholder="薪资要求" data-placeLang="jobSalary">薪资面议</span></div>
+								<div data_track="PC-在线制作-文档编辑页-中间简历编辑-求职意向-点击模块编辑" class="500dtongji inte-time inte-list moduleItemList " id="jobTime"><a class="wbdfont divIconFont" for-key="jobTime"></a><span data-value="immediately" data-placeholder="入职时间" data-placeLang="jobTime">随时到岗</span></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+                <!--教育背景模块-->
+				<div class="eduItem baseItem timeItem moduleItem resume_sort " id="resume_edu">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_edu"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_edu" contenteditable="false" data-placeholder="教育背景" data-placeLang="edu" data-textLang="edu">教育背景</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="dd-content moduleItemList" data-id="598567">
+								<div class="dd-title clearfix ">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start">2009.9</i>-<i class="time-end">2013.6</i></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写学校名称..." data-placeLang="school">南京信息工程大学</div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写专业名称..." data-placeLang="major">信息工程（本科）</div></span>
+								</div>
+								<div class="dd-text clearfix  ">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里详细描述你在校期间所学的专业，主要包括课程内容，校内任职，校内荣誉等内容..." data-placeLang="description">专业排名：5/46<div><span style="letter-spacing: 0.4px;">主修课程：</span><span style="letter-spacing: 0.4px;">C，JAVA，Web设计与开发，数据库（SQL），模电/数电，数据通信，微机原理等。</span></div></div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--工作经历模块-->
+				<div class="experItem baseItem timeItem moduleItem resume_sort " id="resume_work">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_work"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_work" contenteditable="false" data-placeholder="工作经验" data-placeLang="exper" data-textLang="exper">工作经验</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="dd-content moduleItemList" data-id="646581">
+								<div class="dd-title clearfix ">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start">2013.7</i>-<i class="time-end">2017.2</i></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization">江苏艾科半导体有限公司</div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle">产品工程师</div></span>
+								</div>
+								<div class="dd-text clearfix ">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里详细描述你的职责范围、工作任务以及取得的成绩等..." data-placeLang="description">主要负责CP产品的导入和量产测试、维护测试程序、分析测试异常等。</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--实习经历模块-->
+				<div class="intexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_internship">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_internship"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_internship" contenteditable="false" data-placeholder="实习经历" data-placeLang="intexper" data-textLang="intexper">实习经验</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="dd-content moduleItemList" data-id="">
+								<div class="dd-title clearfix ">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start" >2009.03</i>-<i class="time-end">2011.06</i></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization">轻工食品学院青协办公室&nbsp;</div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle">副部长</div></span>
+								</div>
+								<div class="dd-text clearfix ">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加实习描述..." data-placeLang="description"><p>2012学年作为院青协志愿者，参与各类志愿活动如养老院陪伴老人，志愿整理图书，志愿回收旧衣物旧书籍、三下乡等。</p><p>协助部长整理部门内部事务，组织策划志愿者活动。</p><div>任职成果：通过志愿活动锻炼了耐心，同时志愿者的身份让我感悟到做人要有一颗时常奉献的心。<br></div></div>
+								</div>
+							</div>
+							<div class="dd-content moduleItemList" data-id="">
+								<div class="dd-title clearfix ">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start" >2009.03</i>-<i class="time-end">2011.06</i></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization"><span style="line-height: normal; text-align: right; float: none;">市场营销12班</span></div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle">&nbsp;班级心理委员</div></span>
+								</div>
+								<div class="dd-text clearfix ">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加实习描述..." data-placeLang="description"><p>担任期间班里发生一起宿舍矛盾，我作为心理委员主动介入化解了矛盾，锻炼了临场发挥和处理事情的能力，且赢得了同学们的信任。</p></div>
+								</div>
+							</div>
+							<div class="dd-content moduleItemList" data-id="">
+								<div class="dd-title clearfix ">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start" >2010.07</i>-<i class="time-end">2010.09</i></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization">广东省检验检疫技术中心</div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle">食品检测员（实习生）</div></span>
+								</div>
+								<div class="dd-text clearfix ">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加实习描述..." data-placeLang="description"><p>实践描述：</p><p>1、在检验检疫技术中心参观并熟悉了解食品质量检验的流程和相关注意事宜。</p><p>2、辅助工作人员做好食品质量检验。</p><p>实践成果：在检疫局食品部实习过程中需要很好的逻辑思维和归纳总结能力，锻炼了良好的实践能力，同时也对食品的安全概念有了一个更直观的了解。</p></div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--志愿者经历模块-->
+				<div class="volexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_volunteer">
+					<dl>
+						<dt class="clearfix hidden">
+							<a class="wbdfont divIconFont" for-key="resume_volunteer"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_volunteer" contenteditable="false" data-placeholder="志愿者经历" data-placeLang="volexper" data-textLang="volexper"></div></span>
+						</dt>
+						<dd class="clearfix">
+                                <div class="dd-content moduleItemList">
+                                    <div class="dd-title clearfix">
+                                        <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"></div></span>
+                                        <span class="company"><div contenteditable="true" data-placeholder="填写单位信息..." data-placeLang="organization"></div></span>
+                                        <span class="post"><div contenteditable="true" data-placeholder="填写角色名称..." data-placeLang="JobTitle"></div></span>
+                                    </div>
+                                    <div class="dd-text clearfix">
+                                        <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加描述..." data-placeLang="description"></div>
+                                    </div>
+                                </div>
+						</dd>
+					</dl>
+				</div>
+				<!--项目经验模块-->
+				<div class="proexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_project">
+					<dl>								
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_project"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_project" contenteditable="false" data-placeholder="项目经验" data-placeLang="proexper" data-textLang="proexper">项目经验</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="dd-content moduleItemList">
+								<div class="dd-title clearfix">
+									<span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"></div></span>
+									<span class="company"><div contenteditable="true" data-placeholder="填写项目名称..." data-placeLang="organization"></div></span>
+									<span class="post"><div contenteditable="true" data-placeholder="填写角色名称..." data-placeLang="JobTitle"></div></span>
+								</div>
+								<div class="dd-text clearfix">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加描述..." data-placeLang="description"></div>
+								</div>
+							</div>
+						</dd>									
+					</dl>
+				</div>
+				<!--荣誉奖项模块-->
+				<div class="honorItem baseItem moduleItem descItem resume_sort hidden" id="resume_honor">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_honor"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_honor" contenteditable="false" data-placeholder="荣誉奖项" data-placeLang="honor" data-textLang="honor">荣誉奖项</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="dd-content moduleItemList">
+								<div class="dd-text clearfix">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="honor_content" data-placeholder="在这里详细描述你所获得的奖项荣誉..." data-placeLang="description"><p>2013-2014学年 &nbsp; &nbsp;获“院级通报表扬一次 ，奖学金三等奖<span class="Apple-tab-span" style="white-space:pre"></span>”</p><p>2014-2015学年 &nbsp; &nbsp;获“国家级励志奖学金”</p></div>
+								</div>
+							</div>									
+						</dd>
+					</dl>
+				</div>
+				<!--自我评价模块-->
+				<div class="evalItem baseItem moduleItem descItem resume_sort " id="resume_summary">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_summary"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_summary" contenteditable="false" data-placeholder="自我评价" data-placeLang="self" data-textLang="self">自我评价</div></span>
+						</dt>
+						<dd class="clearfix">		
+							<div class="dd-content moduleItemList">
+								<div class="dd-text clearfix">
+									<div class="resume_lang resume_content" contenteditable="true" for-key="summary_content" data-placeholder="在这里对你的履历进行简短的总结和评价..." data-placeLang="description"><p>1、专业基础扎实，对工作认真负责，积极主动，反应迅速，具有良好的沟通能力；</p><p>2、有很强的组织能力和团队协作精神，具有较强的适应能力；</p><p>3、纪律性强，工作积极配合；意志坚强，具有较强的无私奉献精神；</p><p>4、具有良好的合作精神，出色的人际交往能；</p></div>
+								</div>
+							</div>									
+						</dd>
+					</dl>
+				</div>
+				<!--作品展示模块-->
+				<div class="workItem baseItem moduleItem resume_sort hidden" id="resume_portfolio">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_portfolio"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_portfolio" data-placeholder="作品展示" data-placeLang="portfolio" data-textLang="portfolio">作品展示</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="work-con">
+								<div class="baseItem-null" style="display: block;"><div class="baseItem-nullcon"><i>+</i><span data-textLang="addPortfolio">添加我的作品</span></div></div>
+                            		<div class="work-con-img clearfix">
+									</div>
+									<div class="work-con-link clearfix">
+                                    </div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--推荐信模块-->
+				<div class="recomentItem baseItem moduleItem resume_sort hidden" id="resume_recoment">
+					<dl>
+						<dt class="clearfix ">
+							<a class="wbdfont divIconFont" for-key="resume_recoment"></a>
+							<span><div class="resume_lang module_item_title" for-key="resume_recoment" data-placeholder="推荐信" data-placeLang="recoment" data-textLang="recoment">推荐信</div></span>
+						</dt>
+						<dd class="clearfix">
+							<div class="recoment-con">
+								<div class="baseItem-null" style="display:block;"><div class="baseItem-nullcon"><i>+</i><a target="_blank" data-textLang="requestRecomment">邀请别人为你写推荐信</a></div></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--手机二维码模块-->
+				<div class="ewmItem baseItem moduleItem resume_sort hidden" id="resume_qrcode">
+					<dl>
+						<dt class="clearfix">
+							<a class="wbdfont divIconFont" for-key="resume_qrcode">&#xe8dd;</a>
+							<span><div class="resume_lang module_item_title" for-key="resume_qrcode" data-placeholder="二维码" data-placeLang="code" data-textLang="code">二维码</div></span>
+						</dt>
+						<dd class="clearfix moduleItemList">
+							<div class="ewm-con">
+								<span><img class="qrImg" src="http://wubaiding.bj.bcebos.com/upload/image/201801/07/ae84ab2f-8493-4f63-9bb6-c2f3906269b2.png" width="196"/></span>
+                                <div class="resume_content" contenteditable="true" data-placeholder="感谢您的阅读，扫一扫查看我的手机简历" data-placeLang="ewm" data-textLang="ewm">感谢您的阅读，扫一扫查看我的手机简历</div>
+							</div>									
+						</dd>
+					</dl>
+				</div>
+				<!--添加自定义模块-->
+				<div class="baseItem-null addCustomItem"><div class="baseItem-nullcon 500dtongji" data_track="PC-在线制作-文档编辑页-中间简历编辑-自定义模块-添加自定义模块"><i>+</i><span data-textLang="custom">添加自定义模块</span></div></div>
+			</div>
+			<div class="wbdCv-baseBottom"></div>					
+		</div>
+	</div>
+	<script>
+		if(typeof cvresume != "undefined"){
+	        cvresume.main.resume_draw(440,3775359,3070090,'6928679114');
+	        cvresume.main.set_language("zh");
+	        cvresume.info.resumecontentid=0;//内容简历模板id
+	                cvresume.main.resume_sort({"left":["base_info","base_home","base_social"],"top":["resume_head","resume_name"],"right":["resume_job_preference","resume_edu","resume_work","resume_internship","resume_skill","resume_hobby","resume_volunteer","resume_project","resume_honor","resume_summary","resume_portfolio","resume_recoment","resume_qrcode"],"bottom":[]});
+		}
+	    // 对应简历模板的个人标签、块距生效js代码（只应用在文档简历）
+	    var _mobans_v620 = ["WM0008","JM0289","MR0031","MR0029"];
+	    if($.inArray("JM0211", _mobans_v620) != -1){//当前模板块距调节无意义
+	        //隐藏块距功能
+	        $("#setStyleModal").find(".fgsz-modalmargin").addClass("hidden");
+	    }
+	</script>
+<!--非自由编辑-->
+</div>
+<!--联系我模块-->
+	<div class="contactItem hidden" id="resume_contact">
+	    <dl>
+	        <dt class="clearfix ">
+	            <span><div class="resume_lang module_item_title" for-key="resume_contact" data-placeholder="联系我" data-textLang="contact" data-placeLang="contact">联系我</div></span>
+	        </dt>
+	        <dd class="clearfix">
+	            <div class="contact-con">
+	                <div class="disc resume_contact_desc" contenteditable="true" data-placeholder-tips="在这里留言，我将尽快联系你。" data-textLang="contactTip" data-placeLang="contactTip"></div>
+	                <div class="contact-main">
+	                    <div class="name resume_contact_name" contenteditable="true" data-placeholder="姓名" data-textLang="contactName" data-placeLang="contactName"></div>
+	                    <div class="phone resume_contact_mobile" contenteditable="true" data-placeholder="电话" data-textLang="contactEmail" data-placeLang="contactEmail"></div>
+	                    <div class="text resume_contact_content" contenteditable="true" data-placeholder-tips="留言内容。"  data-textLang="contactMsg" data-placeLang="contactMsg"></div>
+	                    <button class="btn 500dtongji"  data_track="PC-在线制作-文档编辑页-中间简历编辑-联系我-发送" data-textLang="send">发送</button>
+	                </div>
+	            </div>
+	        </dd>
+	    </dl>
+	</div>
+<script>
+    $(function(){
+        $("#resume_contact .btn").click(function(){
+            cvresume.main.contact_me(3775359);
+        });
+        $("div[data-placeholder-tips]").each(function(index,ele){
+        	var curhtml=$(ele).html();
+        	if(cvresume.main.is_empty(curhtml)){
+        		$(ele).html($(ele).attr("data-placeholder-tips"));
+        	}
+        })
+        $(document).on("focus","div[data-placeholder-tips]",function(){
+        	var curhtml=$(this).html();
+        	if($(this).attr("data-placeholder-tips")==curhtml){
+        		$(this).html("");
+        	}
+        })
+         $(document).on("blur","div[data-placeholder-tips]",function(){
+        	var curhtml=$(this).html();
+        	if(cvresume.main.is_empty(curhtml)){
+        		$(this).html($(this).attr("data-placeholder-tips"));
+        	}
+        })
+    });
+</script>
+<div class="modal fade upvipModal" id="upvipModal">
+	<div class="modal-dialog">
+		<div class="modal-content clearfix">
+			<div class="title"><span>VIP会员升级</span><i class="close 500dtongji"  pre_track="PC-通用-{0}-升级会员弹框-升级会员弹框-关闭" data_track="PC-通用-通用升级-升级会员弹框-升级会员弹框-关闭"  data-dismiss="modal" aria-hidden="true"></i></div>
+			<div class="con">
+				<div class="info">
+					<span class="head-img"><img src="http://static.500d.me/resources/500d/images/default.jpg" width="40" height="40"/></span>
+					<span id="upvip_tips">尊敬的  <i>limh_2010@163.com</i>  用户，您已开通<s>【升级会员】</s>，如需升级请选择支付：</span>
+				</div>
+				<div class="hy-check">
+					<ul>
+					</ul>
+				</div>
+				<div class="order-pay clearfix">
+					<form id="upvip_suborderform" action="/member/order/create/" method="post" target="_blank" novalidate="novalidate">
+				 		<input type="hidden" name="productid" value="1276">
+				 		<input type="hidden" name="price" value="10" >
+					<p>请选择支付方式：</p>
+					<div class="wx left"><input name="paytype" value="weixin" type="radio" checked="checked"><label></label></div>
+					<div class="zfb left"><input name="paytype" value="alipay" type="radio"><label></label></div>
+					<div class="hj right"><a href="javascript:;" id="upvip_pay_btn" class="500dtongji"  pre_track="PC-通用-{0}-升级会员弹框-升级会员弹框-立即支付" data_track="PC-通用-通用升级-升级会员弹框-升级会员弹框-立即支付">立即支付</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--支付提示框-->
+<div class="porduct_pay_Modal modal fade" style="display:none" id="upvip_product_pay_tips">
+	<div class="modal-tips">
+		<h2>请在你新打开的页面上完成付款</h2>
+		<p>支付完成后，请根据您支付的情况点击下面按钮。</p>
+		<div class="pbtn"><a class="yes yesBtn 500dtongji" pre_track="PC-通用-{0}-升级会员弹框-升级会员弹框-支付完成" data_track="PC-通用-通用升级-升级会员弹框-升级会员弹框-支付完成" href="javascript:;" onclick="location.reload()" >支付完成</a><a class="no 500dtongji" pre_track="PC-通用-{0}-升级会员弹框-升级会员弹框-支付遇到问题" data_track="PC-通用-通用升级-升级会员弹框-升级会员弹框-支付遇到问题" href="http://help.500d.me" target="blank">支付遇到问题</a></div>
+	</div>		
+</div>
+<script>
+$(function(){
+	//支付
+	$("#upvip_pay_btn").click(function(){
+		var pid=$("#upvip_suborderform").find('input[name="productid"]').val();
+		if(pid==null||pid==""){
+			layer.msg('获取不到对应的商品信息，请刷新重试');
+			return;
+		}
+		var paytype=$("#upvip_suborderform").find('input[name="paytype"]:checked').val();
+		if(paytype==null||paytype==""){
+			layer.msg('请选择支付方式~');
+			return;
+		}
+		$("#upvip_suborderform").submit();
+		$("#upvipModal").modal("hide");
+		$("#upvip_product_pay_tips").modal("show");
+	});
+	$(".left label").click(function(){
+		$(this).siblings("input").attr("checked","checked");
+	});	
+	$(".hy-check li").click(function(){
+		$(".hy-check li").removeClass("checked");
+		$(this).addClass("checked");
+		$("#upvip_suborderform").find('input[name="price"]').val($(this).attr("data_price"));
+	});	
+});
+</script><!--up_vip-->
+	<div class="bottom-modal show-swal3 zhaopin_bottom" style="display: none;bottom:0;"><span class="close"></span><span class="zhaopin_bg"></span><a href="http://zhaopin.500d.me" class="zhaopin_link 500dtongji" data_stack="发布页-招聘广告-立即查看">立即查看</a></div>
+</body>
+</html>
